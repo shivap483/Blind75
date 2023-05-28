@@ -5,3 +5,6 @@
 
 # Ignore log files
 /logs/
+.fleet/
+.idea/
+.vscode/
