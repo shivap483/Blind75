@@ -4,7 +4,7 @@ import ListNode
 
 
 class Solution:
-    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+    def removeNthFromEnd(self, head, n):
         if not head or not head.next:
             return None
         dummy = ListNode(0)
@@ -19,4 +19,3 @@ class Solution:
             last = last.next
         last.next = last.next.next
         return dummy.next
-
