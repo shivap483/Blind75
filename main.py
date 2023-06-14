@@ -2,7 +2,7 @@
 import datetime
 import time
 
-import RemoveNthNodeFromEnd
+import CourseScheduling as file
 from ListNode import ListNode
 from TreeNode import TreeNode
 
@@ -20,15 +20,15 @@ from TreeNode import TreeNode
 # Press the green button in the gutter to run the script.
 if __name__ == "__main__":
     # lists = [[1,4,5],[1,3,4],[2,6]]
-    input = [30130506]
+    input = [(5, [[1, 4], [2, 4], [3, 1], [3, 2]])]
     # for list in lists:
     #     input.append(ListNode.getLinkedList(list))
     t = "ABCCED"
     solution = file.Solution()
     start = time.time()
     sol = []
-    for case in input:
-        ans = solution.reverseBits(case)
+    for num, pre in input:
+        ans = solution.canFinish(num, pre)
         sol.append(ans)
     end = time.time()
     print(sol)
